@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- Boot strap script -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- JQuery links -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- SweetAlert -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exile&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="Style.css" />
+
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="container mt-5">
+      <h1 class="exile-regular py-2 m-0">TO-DO LIST</h1>
+      <!-- User input section -->
+      <div class="inputDiv row p-1 m-0">
+        <input
+          class="col me-1 fw-bold fs-5"
+          type="text"
+          id="input_text"
+          placeholder="Enter The Task"
+        />
+        <textarea
+          class="col me-1 fw-bold fs-5"
+          name=""
+          id="description"
+          placeholder="Enter The Description"
+        ></textarea>
+        <input class="col-2 me-1 fw-bold" type="datetime-local" id="dateandtime" />
+        <button
+          class="col-2 btn btn-primary fw-bold fs-5"
+          type="button"
+          onclick="ToDoList()"
+        >
+          Click Me
+        </button>
+      </div>
+
+      <!-- Output section -->
+      <div class="container p-1 mt-2" id="dispaly_data">
+        <div class="accordion" id="accordionExample"></div>
+      </div>
+    </div>
+    <script src="Script.js"></script>
+  </body>
+</html>
