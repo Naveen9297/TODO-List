@@ -1,0 +1,5 @@
+About My TODO Project :
+--> We can add Task's, Description, Due Date and Time.
+--> We can mark for completed task and make to incomplete again.
+--> We can remove the unwanted task.
+--> With out a database we can store task's.
